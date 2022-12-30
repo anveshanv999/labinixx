@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <ul>
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </li>
+      </ul>
+      <span><ion-icon name="call-outline"></ion-icon>+245 124586 414</span>
+      <a href="#">My Account</a>
+    </div>
+
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">categories</a></li>
+        <li><a href="">catalogs</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li>
+          <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+          <a href="#">Enquiry</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    "
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".menu").hasClass("active")) {
+            $(".menu").removeClass("active");
+            $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+          } else {
+            $(".menu").addClass("active");
+            $(this)
+              .find("a")
+              .html("<ion-icon name='close-outline'></ion-icon>");
+          }
+        });
+      });
+    </script>
+
+    <div class="container">
+      <h1 style="text-align: center">Featured categories</h1>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p1.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p2.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p3.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p5.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p6.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p7.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p8.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="p9.png" alt="" />
+              <div class="overlay">
+                <p>Salt Spary Chamber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="text-align: center">Treading at Labnix</h2>
+
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p1.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p2.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p3.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p7.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p5.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-8">
+        <div class="card">
+          <div class="innerDiv">
+            <div>
+              <img src="p6.png" class="imgBx" />
+            </div>
+            <div class="content">
+              <h2>Melt Flow Indexer</h2>
+              <p>Melt Flow indexer NMFl-101</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+            <button>View</button>
+            <button>Quote</button>
+            <button>Catalog</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="text-align: center;">Suggested Products</h3>
+        <div class="container3">
+          <div class="card3">
+            <img src="p1.png" alt="" />
+
+            <div class="heading">
+              <h4>Haze Measurement Devices</h4>
+              <h5>color and Haze meter</h5>
+              <p>
+                Color & Haze meter NHM-101 is used for haze and transmittance measurement. it has open measurement area with no limit on sample size, can carry out vertical measurement as well.
+              </p>
+              <button>View</button>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="rightinnerDiv">
+              <img src="p1.png" alt="" />
+              <h4>Melt Flow Indexer NFM-101</h4>
+              <button>view</button>
+              <button>content</button>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="rightinnerDiv">
+              <img src="p2.png" alt="" />
+              <h4>Melt Flow Indexer NFM-101</h4>
+              <button>view</button>
+              <button>content</button>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="rightinnerDiv">
+              <img src="p3.png" alt="" />
+              <h4>Melt Flow Indexer NFM-101</h4>
+              <button>view</button>
+              <button>content</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+    <footer class="footer">
+        <div class="footchild">
+            <h2>Lobinix</h2>
+            <p>In eu libero ligula. fusce eget metus lorem. ac viverra leo. Nullam convallis,arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultrices volutpat sapien.</p>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        
+        
+        <div class="footchild"> 
+            <h3>Latest News</h3>
+            <h5>Did son unreservd themselves indulgence its</h5>
+            <h5>Rapturous am eagemess it as resoving household</h5>
+        </div>
+        <div class="footchild">
+            <h3>Quick Links</h3>
+            <div class="link">
+            <a href="#">Home</a> <br>
+            <a href="#">About</a> <br>
+            <a href="#">Contact</a> <br> 
+            <a href="#">Privacy</a> <br>
+            <a href="#">Skills</a> <br> 
+            <a href="#">Career</a> 
+            </div>
+        </div>
+        <div class="footchild">
+            <h3>Best Seller</h3>
+            <p>Flow indexer NMFI</p>
+            <p>Melt Flow Indexer NMFl-101</p>
+            <p>NMFl-101 Melt Flow Indexer</p>
+            <p>Videohive</p>
+            <p>Melt Flow Indexer</p>
+            <p>Melt Flow Indexer</p>
+        </div>
+    </footer>
+</body>
+</html4
